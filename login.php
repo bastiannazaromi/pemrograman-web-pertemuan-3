@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['log_user'])) {
+	header('location: dashboard.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
